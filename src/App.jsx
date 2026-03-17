@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import MainLayout from "../layout/MainLayout";
-import HomePage from "./pages/homepage";
-import MoviePage from "./pages/moviePage";
+import HomePage from "./pages/HomePage";
+import MoviePage from "./pages/MoviePage";
 
 export default function App() {
   return (
