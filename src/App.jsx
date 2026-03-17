@@ -1,14 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-import mainLayout from "../layout/mainLayout";
+import MainLayout from "../layout/MainLayout";
 import HomePage from "./pages/homepage";
-HomePage;
+import MoviePage from "./pages/moviePage";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route Component={mainLayout}>
-          <Route path="/" Component={HomePage}></Route>
+        <Route Component={MainLayout}>
+          <Route index Component={HomePage}></Route>
+          <Route path=":id" Component={MoviePage}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
