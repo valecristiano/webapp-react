@@ -19,7 +19,7 @@ export default function MoviePage() {
   }, [id]);
 
   if (!movie) {
-    return <div className="container">Caricamento in corso...</div>;
+    return <div className="container">Loading...</div>;
   }
   return <Movie movie={movie}></Movie>;
 }
