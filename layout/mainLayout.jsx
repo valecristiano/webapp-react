@@ -25,7 +25,7 @@ export default function MainLayout() {
         </div>
       </nav>
       <main>
-        <div className="container py-3">
+        <div className="py-3">
           <Outlet />
         </div>
       </main>

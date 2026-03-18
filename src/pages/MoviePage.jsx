@@ -21,5 +21,9 @@ export default function MoviePage() {
   if (!movie) {
     return <div className="container">Loading...</div>;
   }
-  return <Movie movie={movie}></Movie>;
+  return (
+    <section className="container">
+      <Movie movie={movie}></Movie>;
+    </section>
+  );
 }

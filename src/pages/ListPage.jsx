@@ -18,8 +18,8 @@ export default function ListPage() {
   }
   return (
     <>
-      <h1>Movies List</h1>
-      <section>
+      <section className="container">
+        <h1>Movies List</h1>
         <MoviesList moviesList={moviesList}></MoviesList>
       </section>
     </>
