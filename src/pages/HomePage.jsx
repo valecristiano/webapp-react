@@ -1,5 +1,7 @@
 import axios from "axios";
-import MovieCard from "../../components/MovieCard";
+import MovieCard from "../components/MovieCard";
+import Loader from "../components/Loader";
+
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
 
@@ -18,9 +20,7 @@ export default function HomePage() {
     axios.get(bestRatedUrl).then((res) => setBestMovie(res.data.result));
   }, []);
 
-  if (!latestMovie || !bestMovie) {
-    return <div className="container">Loading...</div>;
-  }
+  if (!latestMovie || !bestMovie) return <Loader />;
 
   return (
     <>
