@@ -33,11 +33,9 @@ export default function ReviewForm({ movieId, getMovie }) {
   };
 
   return (
-    <div className="container">
+    <>
+      <h2 className="m-2">Add review:</h2>
       <div className="card w-100 bg-secondary-subtle border border-warning-subtle">
-        <div className="card-header">
-          <h2>Add a review</h2>
-        </div>
         <form onSubmit={handleFormSubmit}>
           <label htmlFor="name" className="form-label p-2">
             Name
@@ -54,6 +52,6 @@ export default function ReviewForm({ movieId, getMovie }) {
           <button className="btn btn-outline-warning m-2">Publish</button>
         </form>
       </div>
-    </div>
+    </>
   );
 }

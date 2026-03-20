@@ -1,11 +1,10 @@
 export default function Movie({ movie }) {
   return (
-    <section className="container">
+    <>
       <h2>{movie.title}</h2>
       <div className="row row-cols-1 row-cols-md-2 g-2 ">
-        {/* SCHEDA FILM */}
         <div className="col">
-          <div className="card h-100 w-100 bg-secondary-subtle border border-warning-subtle">
+          <div className="card h-100 bg-secondary-subtle border border-warning-subtle">
             <div className="p-3 text-center">
               <img src={movie.image} className="img-card" alt={movie.title} />
             </div>
@@ -20,21 +19,7 @@ export default function Movie({ movie }) {
             </ul>
           </div>
         </div>
-        {/* RECENSIONI */}
-        <div className="col">
-          <div className="card w-100 bg-secondary-subtle border border-warning-subtle">
-            <h3 className="p-2">User reviews:</h3>
-            <ul className="list-group list-group-flush ">
-              {movie.reviews.map((review) => (
-                <li key={review.id} className="list-group-item list-group-item-secondary text-white">
-                  <strong>{review.name}</strong> - {review.vote}/5
-                  <p className="mb-0 text-muted">{review.text}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
       </div>
-    </section>
+    </>
   );
 }
