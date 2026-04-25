@@ -1,66 +1,41 @@
-Esercizio
-Concludiamo migliorando l’esperienza sulla nostra SPA, inserendo un loader.
+<h2> 🎬 Boolflix - Movie Database & Reviews </h2>
 
-creiamo un componente loader
-Questo componente deve poter apparire su qualunque pagina della nostra app.
-Creiamo e sfruttiamo un Context per dare la possibilità ad ogni componente di attivare o disattivare il loader sulla propria pagina
+<p>
+<strong>Progetto singolo - Full-stack Web Development Master by Boolean Tech Academy </strong>
+</p>
+<p>
+Boolflix è una web-app Full Stack ispirata alle popolari piattaforme di streaming. Il progetto permette agli utenti di esplorare un catalogo di film, consultarne i dettagli tecnici e le recensioni, e interagire attivamente lasciando i propri feedback attraverso un sistema di recensioni integrato.
+</p>
 
-BONUS:
+<h3>🛠 Funzionalità:</h3>
 
-Personalizziamo l’aspetto della nostra app col CSS
+<h4> Backend (Node.js & Express) </h4>
 
-Esercizio
-Miglioriamo l’esperienza dell’utente inserendo
+- **RESTful API**: Architettura modulare con rotte e controller dedicati per film e recensioni.
+- **Database Relazionale**: Gestione dei dati tramite MySQL (Film, Recensioni).
+- **Gestione Recensioni**: Endpoint dedicato per il salvataggio di nuovi feedback utente.
+- **Middleware**: Gestione centralizzata degli errori (404 e 500) per una maggiore robustezza.
+- **Sicurezza**: Utilizzo di variabili d'ambiente (`.env`) per la protezione dei dati sensibili del DB.
 
-MILESTONE 1 (BACKEND)
+<h4> Frontend (React & Vite)</h4>
 
-Predisponiamo un’API per salvare nel database una nuova recensione legata ad un film
-Testiamola su postman e verifichiamo che nel DB venga effettivamente inserita una nuova recensione
+- **Single Page Application**: Navigazione fluida tramite React Router.
+- **Dashboard Film**: Homepage dinamica che recupera e visualizza due collezioni di film preferiti e sezione film con catalogo completo del database
+- **Dettaglio & Feedback**: Pagina dedicata al singolo film con form interattivo per l'invio di nuove recensioni in tempo reale.
 
-MILESTONE 2 (FRONTEND)
+🚀 **Tech Stack:**
 
-Creiamo un componente che contenga il form per le recensioni
-Inseriamo questo componente nella pagina di dettaglio del film
-All’invio del form, la nuova recensione viene salvata sul database e visualizzata nella pagina, in fondo alle altre
+**Frontend:**
 
-BONUS:
+- React.js
+- React Router
+- Axios
+- Bootstrap
 
-Inseriamo una validazione nel form di recensione
+**Backend:**
 
----
-
-Esercizio
-Ora è il momento di prepararci al frontend della nostra Web App!
-
-MILESTONE 0
-
-Ragionare e preparare uno schemino per impostare la struttura del lavoro in maniera da sfruttare la riutailizzabilità dei componenti React e le loro props.
-
-2 pagine:
-Homepage con lista film - index
-Moviepage con singolo film - show
-
-MILESTONE 1
-
-Mettiamo su un nuovo progetto React aiutandoci con Vite
-Ripuliamo come sempre l’app da file e codice di esempio non necessari
-Installiamo il necessario: React Router, Axios e Bootstrap (se volete utilizzarlo)
-
-MILESTONE 2
-
-Creiamo un layout di base per la nostra applicazione ed impostiamo le rotte per le diverse pagine.
-Creiamo 2 pagine:
-La home, in cui mostreremo la lista dei film
-La pagina di dettaglio di un singolo film
-
-MILESTONE 3
-
-Configuriamo l’app di backend (repo webapp-express) a ricevere chiamate dalla nostra applicazione React, installando e impostando il middleware CORS
-Proviamo quindi ad effettuare una chiamata Ajax dalla home del progetto React, per ottenere la lista dei libri
-
-MILESTONE 4
-
-In ultimo, effettuiamo una chiamata AJAX dalla pagina di dettaglio per ottenere il dettaglio di un singolo film, comprese le sue recensioni
-
-Bonus
-Curare l’aspetto estetico della vostra applicazione
+- Node.js
+- Express.js
+- MySQL
+- CORS (Middleware per comunicazione cross-origin)
+- dotenv (Variabili d'ambiente)
